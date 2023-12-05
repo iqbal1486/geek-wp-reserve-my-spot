@@ -1,0 +1,221 @@
+.watch_master_class_now {
+    border-radius: 3px;
+    font-weight: bold;
+    display: block;
+    background: linear-gradient(180deg,#ffe26d,#f5c918);
+    color: black;
+    max-width: 250px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    margin: unset;
+	margin-bottom: 40px;
+}
+
+.watch_master_class_now:active {
+    color: black;
+}
+
+.form-container {
+    max-width: 450px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.form-container .form-container-top {
+    color: #fff;
+    padding: 11px;
+    font-weight: bold;
+    background-color: #1a8ba1;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.form-container p.legend {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.form-container .form-container-bottom{
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+button {
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+}
+.submit_button_wrapper{
+    width: inherit;
+    position: relative;
+}
+.reserve_my_spot_wrapper form button {
+    width: 100%;
+    display: inline-block;
+    background: linear-gradient(180deg,#ffe26d,#f5c918);
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 15px;
+    line-height: 1;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #000;
+}
+.reserve_my_spot_wrapper form button:hover {
+  opacity: 0.8;
+}
+
+.disclaimer {
+    font-size: 14px;
+    color: #777;  font-family: sans-serif;
+}.disclaimer a{
+    color: #1a8ba1;
+}
+
+.reserve_my_spot_wrapper {}
+
+.reserve_my_spot_wrapper form {
+    width: 100%;
+    max-width: 100%;
+}
+
+.reserve_my_spot_wrapper form .form-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.reserve_my_spot_wrapper form .form-inner .form-group {
+    width: 100%;
+    max-width: 100%;
+}
+
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container {
+    position: relative;
+    width: 100%;
+}
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container .iti .iti__selected-flag {
+    border-right: 1px solid #ccc;
+}
+
+
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #777;  font-family: sans-serif;
+    line-height: 1;
+    transition: border-color 0.3s ease;
+
+
+}
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container select:focus,
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container select:hover,
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container input:hover,
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container input:focus {
+    border-color: #1a8ba1;
+    outline: none;
+  }
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px; line-height: 1;
+    color: #777;  font-family: sans-serif;
+    transition: border-color 0.3s ease;
+}
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    font-size: 18px; line-height: 1;
+    color: #777;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+    transform: translate(0, -50%);
+    font-family: sans-serif;
+}
+
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container input:focus + label, .reserve_my_spot_wrapper form .form-inner .form-group .form-input-container input:not(:placeholder-shown) + label {
+    top: 2px;
+    font-size: 15px;
+    color: #1a8ba1;
+    background-color: #ffffff;
+    padding: 0 4px;
+    border-radius: 4px;
+    left: 9px;
+}.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container .iti {
+    width: 100%;
+}
+
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container ul li:before{
+    display: none;
+    font-size: 14px;
+}.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container ul li{
+
+    font-size: 14px;
+}
+
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container ul::-webkit-scrollbar {
+    display:none;
+  }
+
+.form-container .custom-hidden {
+  display: none;
+}
+
+.form-container #loader {
+  display: none;
+}
+
+.addeventatc{
+    background: #1a8ba1;    
+}
+
+.form-container .custom-loader {
+    --d:11px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 1;
+    color: #1a8ba1;
+    position: absolute;
+    top: 38px;
+    right: 25px;
+    box-shadow: 
+        calc(1*var(--d))      calc(0*var(--d))     0 0,
+        calc(0.707*var(--d))  calc(0.707*var(--d)) 0 0.5px,
+        calc(0*var(--d))      calc(1*var(--d))     0 1px,
+        calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 1.5px,
+        calc(-1*var(--d))     calc(0*var(--d))     0 2px,
+        calc(-0.707*var(--d)) calc(-0.707*var(--d))0 2.5px,
+        calc(0*var(--d))      calc(-1*var(--d))    0 3px;
+    animation: s7 0.5s infinite steps(8);
+}
+
+@keyframes s7 {
+  100% {transform: rotate(1turn)}
+}
+
+@media screen and (min-width: 768px) {
+    .watch_master_class_now {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .form-container .form-container-bottom {
+        padding: 20px 10px;
+    }
+}
