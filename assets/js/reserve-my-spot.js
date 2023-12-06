@@ -1,3 +1,4 @@
+$ = jQuery;
 const input = document.querySelector("#phone");
 const form = document.querySelector("#reserve_my_spot");
 
@@ -23,17 +24,17 @@ $(document).ready(function() {
 
       $("button.watch_master_class_now").click(function() {
           $([document.documentElement, document.body]).animate({
-              scrollTop: $("div.form-container").offset().top
+              scrollTop: $("div.reserve_my_spot_form").offset().top
           }, 500);
       });
 
-      $('.form-container form#reserve_my_spot').on('submit', function(e){
+      $('.reserve_my_spot_form form#reserve_my_spot').on('submit', function(e){
             e.preventDefault();
             onJoinMasterclass(e);
             
       });
       
-      //$('.form-container form button[type="submit"]').on('click', onJoinMasterclass);
+      //$('.reserve_my_spot_form form button[type="submit"]').on('click', onJoinMasterclass);
 
       //  $("input[type='tel']").intlTelInput({
       //       initialCountry: "auto",
@@ -51,17 +52,17 @@ $(document).ready(function() {
 
       var tomorrow = after_days(1);
       var nextTomorrow = after_days(2);
-      $('.form-container select[name="date"]').append(
+      $('.reserve_my_spot_form select[name="date"]').append(
             `<option value="${tomorrow.dateString}">${tomorrow.formatted}</option>`);
 
-      $('.form-container select[name="date"]').append(
+      $('.reserve_my_spot_form select[name="date"]').append(
             `<option value="${nextTomorrow.dateString}">${nextTomorrow.formatted}</option>`);
 
-      $('.form-container select[name="date"]').on('change', function(e) {
-            $('.form-container select[name="time"]').html(
+      $('.reserve_my_spot_form select[name="date"]').on('change', function(e) {
+            $('.reserve_my_spot_form select[name="time"]').html(
                   '<option value="" disabled selected>Select time</option>');
             if (e.target.value == '0') {
-                  $('.form-container select[name="time"]').append(
+                  $('.reserve_my_spot_form select[name="time"]').append(
                         '<option value="0:00" selected>Start Now</option>');
             } else if (e.target.value == '1') {
                   var now = new Date();
@@ -69,14 +70,14 @@ $(document).ready(function() {
                   if (hour < 23) {
                         if (hour < 8) hour = 7;
                         for (var i = hour + 1; i <= 23; i++) {
-                              $('.form-container select[name="time"]').append(
+                              $('.reserve_my_spot_form select[name="time"]').append(
                                     `<option value="${i}:00">${i >= 13 ? i - 12 : i}:00 ${i >= 13 ? 'PM' : 'AM'}</option>`
                               );
                         }
                   }
             } else {
                   for (var i = 8; i <= 23; i++) {
-                        $('.form-container select[name="time"]').append(
+                        $('.reserve_my_spot_form select[name="time"]').append(
                               `<option value="${i}:00">${i >= 13 ? i - 12 : i}:00 ${i >= 13 ? 'PM' : 'AM'}</option>`
                         );
                   }
@@ -144,7 +145,7 @@ function toESTDate(hour, watchDate) {
 
 function onJoinMasterclass(e) {
       e.preventDefault();
-      var i = $('.form-container form')[0];
+      var i = $('.reserve_my_spot_form form')[0];
       //console.log(i, i.format);
       var s = document.referrer;
       var o = new FormData(i);

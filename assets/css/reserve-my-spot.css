@@ -1,15 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .watch_master_class_now {
     border-radius: 3px;
     font-weight: bold;
     display: block;
-    background: linear-gradient(180deg,#ffe26d,#f5c918);
+    background: linear-gradient(180deg, #ffe26d, #f5c918);
     color: black;
     max-width: 250px;
     text-align: center;
     text-decoration: none !important;
     cursor: pointer;
     margin: unset;
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .watch_master_class_now:active {
@@ -33,12 +34,14 @@
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
+
 .form-container p.legend {
     margin-bottom: 20px;
     text-align: center;
     font-weight: 500;
 }
-.form-container .form-container-bottom{
+
+.form-container .form-container-bottom {
     padding: 20px;
 }
 
@@ -46,19 +49,22 @@ form {
     display: flex;
     flex-wrap: wrap;
 }
+
 button {
     background-color: yellow;
     border: none;
     cursor: pointer;
 }
-.submit_button_wrapper{
+
+.submit_button_wrapper {
     width: inherit;
     position: relative;
 }
+
 .reserve_my_spot_wrapper form button {
     width: 100%;
     display: inline-block;
-    background: linear-gradient(180deg,#ffe26d,#f5c918);
+    background: linear-gradient(180deg, #ffe26d, #f5c918);
     margin: 15px 0;
     border: none;
     outline: none;
@@ -70,14 +76,18 @@ button {
     font-family: sans-serif;
     color: #000;
 }
+
 .reserve_my_spot_wrapper form button:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .disclaimer {
     font-size: 14px;
-    color: #777;  font-family: sans-serif;
-}.disclaimer a{
+    color: #777;
+    font-family: sans-serif;
+}
+
+.disclaimer a {
     color: #1a8ba1;
 }
 
@@ -103,10 +113,10 @@ button {
     position: relative;
     width: 100%;
 }
+
 .reserve_my_spot_wrapper form .form-inner .form-group .form-input-container .iti .iti__selected-flag {
     border-right: 1px solid #ccc;
 }
-
 
 .reserve_my_spot_wrapper form .form-inner .form-group .form-input-container input {
     width: 100%;
@@ -114,40 +124,46 @@ button {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 18px;
-    color: #777;  font-family: sans-serif;
+    color: #777;
+    font-family: sans-serif;
     line-height: 1;
     transition: border-color 0.3s ease;
-
-
 }
+
 .reserve_my_spot_wrapper form .form-inner .form-group .form-input-container select:focus,
 .reserve_my_spot_wrapper form .form-inner .form-group .form-input-container select:hover,
 .reserve_my_spot_wrapper form .form-inner .form-group .form-input-container input:hover,
 .reserve_my_spot_wrapper form .form-inner .form-group .form-input-container input:focus {
     border-color: #1a8ba1;
     outline: none;
-  }
-.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container select{
+}
+
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 18px; line-height: 1;
-    color: #777;  font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    color: #777;
+    font-family: sans-serif;
     transition: border-color 0.3s ease;
 }
+
 .reserve_my_spot_wrapper form .form-inner .form-group .form-input-container label {
     position: absolute;
     left: 12px;
     top: 50%;
-    font-size: 18px; line-height: 1;
+    font-size: 18px;
+    line-height: 1;
     color: #777;
     transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
     transform: translate(0, -50%);
     font-family: sans-serif;
 }
 
-.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container input:focus + label, .reserve_my_spot_wrapper form .form-inner .form-group .form-input-container input:not(:placeholder-shown) + label {
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container input:focus+label,
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container input:not(:placeholder-shown)+label {
     top: 2px;
     font-size: 15px;
     color: #1a8ba1;
@@ -155,36 +171,39 @@ button {
     padding: 0 4px;
     border-radius: 4px;
     left: 9px;
-}.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container .iti {
+}
+
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container .iti {
     width: 100%;
 }
 
-.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container ul li:before{
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container ul li:before {
     display: none;
     font-size: 14px;
-}.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container ul li{
+}
 
+.reserve_my_spot_wrapper form .form-inner .form-group .form-input-container ul li {
     font-size: 14px;
 }
 
 .reserve_my_spot_wrapper form .form-inner .form-group .form-input-container ul::-webkit-scrollbar {
-    display:none;
-  }
+    display: none;
+}
 
 .form-container .custom-hidden {
-  display: none;
+    display: none;
 }
 
 .form-container #loader {
-  display: none;
+    display: none;
 }
 
-.addeventatc{
-    background: #1a8ba1;    
+.addeventatc {
+    background: #1a8ba1;
 }
 
 .form-container .custom-loader {
-    --d:11px;
+    --d: 11px;
     width: 2px;
     height: 2px;
     border-radius: 50%;
@@ -193,19 +212,14 @@ button {
     position: absolute;
     top: 38px;
     right: 25px;
-    box-shadow: 
-        calc(1*var(--d))      calc(0*var(--d))     0 0,
-        calc(0.707*var(--d))  calc(0.707*var(--d)) 0 0.5px,
-        calc(0*var(--d))      calc(1*var(--d))     0 1px,
-        calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 1.5px,
-        calc(-1*var(--d))     calc(0*var(--d))     0 2px,
-        calc(-0.707*var(--d)) calc(-0.707*var(--d))0 2.5px,
-        calc(0*var(--d))      calc(-1*var(--d))    0 3px;
+    box-shadow: calc(1*var(--d)) calc(0*var(--d)) 0 0, calc(0.707*var(--d)) calc(0.707*var(--d)) 0 0.5px, calc(0*var(--d)) calc(1*var(--d)) 0 1px, calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 1.5px, calc(-1*var(--d)) calc(0*var(--d)) 0 2px, calc(-0.707*var(--d)) calc(-0.707*var(--d))0 2.5px, calc(0*var(--d)) calc(-1*var(--d)) 0 3px;
     animation: s7 0.5s infinite steps(8);
 }
 
 @keyframes s7 {
-  100% {transform: rotate(1turn)}
+    100% {
+        transform: rotate(1turn)
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -219,3 +233,428 @@ button {
         padding: 20px 10px;
     }
 }
+
+
+/**************ALL CSS for new lighbox form goes below this line************/
+
+.reserve_my_spot_lightbox_form .lightbox_error{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.reserve_my_spot_lightbox_form .button {
+    width: 100%;
+    display: inline-block;
+    background: linear-gradient(180deg, #ffe26d, #f5c918);
+    margin: 0;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 15px;
+    text-transform: capitalize;
+    line-height: 1;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+}
+
+.reserve_my_spot_lightbox_form .form-containers .disclaimer {
+    color: #808080;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Inter', sans-serif;
+    margin-top: 17px;
+    margin-bottom: 0;
+    padding: 0 4px;
+}
+
+.reserve_my_spot_lightbox_form .form-containers .disclaimer a {
+    color: #808080;
+}
+
+.reserve_my_spot_lightbox_form .form-containers .step {
+    margin-bottom: 23px;
+    width: 100%;
+}
+
+.reserve_my_spot_lightbox_form .hidden {
+    display: none;
+}
+
+.reserve_my_spot_lightbox_form .watch_master_class_now {
+    display: block;
+}
+
+.reserve_my_spot_lightbox_form .button:hover {
+    opacity: 0.8;
+}
+
+.reserve_my_spot_lightbox_form .button.disabled {
+    display: none;
+}
+
+.reserve_my_spot_lightbox_form .form .progress-bar {
+    width: 100%;
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    justify-content: start;
+}
+
+.reserve_my_spot_lightbox_form .form .progress-bar li.progress-bar__dot {
+    display: block;
+    width: 0;
+    height: 0.6em;
+    background-color: white;
+    cursor: pointer;
+}
+
+.reserve_my_spot_lightbox_form .form .progress-bar li.progress-bar__dot.full {
+    width: 25%;
+    margin: 0;
+    border-radius: 0;
+    background: #108CA0;
+    border: none;
+    height: 100%;
+    margin-left: -1px;
+}
+
+.reserve_my_spot_lightbox_form .form .progress-bar li:last-child.full {
+    border-radius: 0px 0px 0px 0px !important;
+    width: 15%;
+}
+
+.reserve_my_spot_lightbox_form .form .progress-bar li:first-child.full:after {
+    position: absolute;
+    content: "25%";
+    left: 14px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    width: 43px;
+    height: 20px;
+    transform: translate(0, -50%);
+    top: 50%;
+}
+
+.reserve_my_spot_lightbox_form .form .progress-bar li:nth-child(3).full:after {
+    content: '50%';
+    position: absolute;
+    left: 14px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    background: #108ca0;
+    width: 43px;
+    height: 20px;
+    transform: translate(0, -50%);
+    top: 50%;
+}
+
+.reserve_my_spot_lightbox_form .form .progress-bar li:nth-child(5).full:after {
+    content: '75%';
+    position: absolute;
+    left: 14px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    background: #108ca0;
+    width: 43px;
+    height: 20px;
+    transform: translate(0, -50%);
+    top: 50%;
+}
+
+.reserve_my_spot_lightbox_form .form .progress-bar li:nth-child(7).full:after {
+    content: '90%';
+    position: absolute;
+    left: 14px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    background: #108ca0;
+    width: 43px;
+    height: 20px;
+    transform: translate(0, -50%);
+    top: 50%;
+}
+
+.reserve_my_spot_lightbox_form .form .progress-bar li:first-child.full {
+    border-radius: 8px 0px 0px 8px !important;
+}
+
+.reserve_my_spot_lightbox_form .form .progress-bar li.progress-bar__connector {
+    display: block;
+    height: 0.1em;
+    margin-top: 0.45em;
+}
+
+.reserve_my_spot_lightbox_form .form .button-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.reserve_my_spot_lightbox_form .form-containers {
+    width: 100%;
+    max-width: 100%;
+}
+
+.reserve_my_spot_lightbox_form #popup {
+    display: none;
+}
+
+
+/* modal part */
+
+.reserve_my_spot_lightbox_form #modal-background {
+    display: none;
+    background: rgba(0, 0, 0, 0.68);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.reserve_my_spot_lightbox_form .iti__selected-dial-code {
+    font-size: 16px !important;
+}
+
+.reserve_my_spot_lightbox_form #modal ul.progress-bar {
+    margin: 25px 0;
+    border-radius: 8px;
+    background: #E6E6E6;
+    height: 24px;
+    top: 0 !important;
+}
+
+.reserve_my_spot_lightbox_form form .form-inner .form-group .form-input-container input,
+.reserve_my_spot_lightbox_form .form-containers select {
+    border-radius: 8px;
+    border: 1px solid #C2C2C2;
+    background: #FBFBFB;
+    font-family: 'Inter', sans-serif;
+}
+
+.reserve_my_spot_lightbox_form .form-containers .step p.disclaimer {
+    margin: 25px 0 0 0;
+}
+
+.reserve_my_spot_lightbox_form h4,
+.reserve_my_spot_lightbox_form h3 {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+
+.reserve_my_spot_lightbox_form #modal {
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 304px;
+    padding: 20px 20px 36px 20px;
+    border-radius: 8px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    /*
+    animation-name: animatemodal;
+    animation-duration: 0.4s;
+    */
+}
+
+.reserve_my_spot_lightbox_form #close-btn:hover {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.reserve_my_spot_lightbox_form button#previous {
+    width: 50px;
+    height: 50px;
+    background: #dfd9d9;
+    border-radius: 550px;
+    margin: 0 0 25px 0;
+    background: url(../img/marrow-left-solid.svg);
+    background-color: #dfd9d9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    opacity: 0.6;
+}
+
+.reserve_my_spot_lightbox_form #close-btn {
+    align-self: flex-end;
+    width: 24px;
+    height: auto;
+    font-size: 44px;
+    display: inline-flex;
+    line-height: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #108CA0;
+}
+
+.reserve_my_spot_lightbox_form .form-containers .form-container-bottom .step.step1 .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.reserve_my_spot_lightbox_form .form-containers .form-container-bottom .step.step1 input[type="radio"] {
+    display: none;
+}
+
+.reserve_my_spot_lightbox_form .form-containers .form-container-bottom .step.step1 label {
+    position: relative !important;
+    color: #000 !important;
+    cursor: pointer !important;
+    transition: color 0.3s !important;
+    border-radius: 8px !important;
+    background: #F5F5F5 !important;
+    height: 47px;
+    max-width: 101% !important;
+    transform: none !important;
+    margin: 0px !important;
+    padding: 0px 0 0 53px !important;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 19px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.reserve_my_spot_lightbox_form .form-containers .form-container-bottom .step.step1 label:before {
+    content: '' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 12px !important;
+    transform: translateY(-50%) !important;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+    background-color: transparent !important;
+    border: 2px solid#A4A4A4!important;
+    transition: background-color 0.3s !important;
+    fill: #FFF;
+    box-shadow: none !important;
+}
+
+.reserve_my_spot_lightbox_form .form-containers .form-container-bottom .step.step1 input[type="radio"]:checked+label:before {
+    background-color: #fff !important;
+    fill: #FFF;
+}
+
+.reserve_my_spot_lightbox_form .form-containers .form-container-bottom .step.step1 input[type="radio"]:focus+label,
+.reserve_my_spot_lightbox_form .form-containers .form-container-bottom .step.step1 input[type="radio"]:checked+label {
+    color: #fff !important;
+    background: #108CA0 !important;
+}
+
+
+/* Neon Style */
+
+
+/* .reserve_my_spot_lightbox_form .form-containers .form-container-bottom .step.step1  input[type="radio"] + label:before {
+    box-shadow: 0 0 10px #ff6f00 !important;
+  } */
+
+.reserve_my_spot_lightbox_form .form-containers .form-container-bottom .step.step1 input[type="radio"]:focus+label:before {
+    background-color: #fff !important;
+    fill: #FFF;
+}
+
+.reserve_my_spot_lightbox_form .iti__country-list {
+    white-space: normal !important;
+    min-width: 342px;
+}
+
+@media (max-width:420px) {
+    .reserve_my_spot_lightbox_form #modal {
+        max-width: calc(100% - 70px);
+    }
+    .reserve_my_spot_lightbox_form .iti__country-list {
+        white-space: normal;
+        min-width: 305px;
+    }
+}
+
+@media (max-width:370px) {
+    .reserve_my_spot_lightbox_form .iti__country-list {
+        white-space: normal;
+        min-width: 250px;
+    }
+}
+
+
+/* animation part */
+
+@keyframes animatemodal {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+
+/* animation part end */

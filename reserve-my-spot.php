@@ -43,6 +43,8 @@
         require_once WPRMS_PLUGIN_PATH . 'includes/functions.php';
         require_once WPRMS_PLUGIN_PATH . 'admin/settings.php';
         require_once WPRMS_PLUGIN_PATH . 'public/shortcode.php';
+        require_once WPRMS_PLUGIN_PATH . 'lightbox/lightbox-shortcode.php';
+
     }
 
     function wprms_generate_log( $data = "" ){

@@ -1,12 +1,17 @@
 <?php
 	add_action( 'wp_enqueue_scripts', 'wprms_theme_enqueue_styles' );
 	function wprms_theme_enqueue_styles() {
+	    //wp_register_style( 'wprms-bootstrap', WPRMS_PLUGIN_URL."/assets/css/bootstrap.css" );
 	    wp_register_style( 'wprms-intlTelInput', WPRMS_PLUGIN_URL."/assets/css/intlTelInput.css" );
 	    wp_register_style( 'wprms-style', WPRMS_PLUGIN_URL."/assets/css/reserve-my-spot.css?v=3" );
+
 	    wp_register_script( 'wprms-intlTelInput-js', WPRMS_PLUGIN_URL."/assets/js/intlTelInput-jquery.min.js", array('jquery') );
 	    wp_register_script( 'wprms-intl-tel-input-utils-js', WPRMS_PLUGIN_URL."/assets/js/intl-tel-input_11.0.4_js_utils.js", array('jquery') );
+	    //wp_register_script( 'wprms-bootstrap', WPRMS_PLUGIN_URL."/assets/js/bootstrap.js", array('jquery'), time() );
 	    wp_register_script( 'wprms-js', WPRMS_PLUGIN_URL."/assets/js/reserve-my-spot.js", array('jquery'), time() );
+	    wp_register_script( 'wprms-lightbox-js', WPRMS_PLUGIN_URL."/assets/js/reserve-my-spot-lightbox.js", array('jquery'), time() );
 	    wp_localize_script('wprms-js', 'ajax_object', array('ajax_url' => admin_url('admin-ajax.php')));
+
 	}
 	
 	function wprms_tag_a_subscriber($email = NULL, $tag_id = NULL){
