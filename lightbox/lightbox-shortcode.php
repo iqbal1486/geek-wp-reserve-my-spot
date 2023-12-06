@@ -11,13 +11,14 @@ function wprms_shortcode_lightbox_form_masterclass($atts) {
       ?>
 
       <div class="reserve_my_spot_container reserve_my_spot_wrapper reserve_my_spot_lightbox_form">
-          <button id="open-btn">Reserve My Spot</button>
+          <button class="universalbutton webinarbutton" id="open-btn">Reserve My Spot</button>
           <div id="modal-background">
               <div id="modal">
                   <span id="close-btn">&times;</span>
                   <div class="form-containers reserve_my_spot_form">
                       <div class="form-container-bottom">
                           <form id="reserve_my_spot" class="form" method="post">
+                              <input type="hidden" name="aff" value="<?php echo (isset($_GET['aff'])) ? $_GET['aff'] : ""; ?>">
                               <ul class="progress-bar">
                                   <li class="progress-bar__dot full"></li>
                                   <li class="progress-bar__connector"></li>
@@ -85,7 +86,7 @@ function wprms_shortcode_lightbox_form_masterclass($atts) {
                                       </div>
                                   </div>
                               </div>
-                              <div class="step step3 hidden" id="step3">>
+                              <div class="step step3 hidden" id="step3">
                                   <h4>Get a text reminder (optional)</h4>
                                   <div class="form-inner">
                                       <div class="form-group">
@@ -95,7 +96,7 @@ function wprms_shortcode_lightbox_form_masterclass($atts) {
                                       </div>
                                   </div>
                               </div>
-                              <div class="step step4 hidden" id="step4">>
+                              <div class="step step4 hidden" id="step4">
                                   <h3>Reserve your spot</h3>
                                   <div class="form-inner">
                                       <div class="form-group">

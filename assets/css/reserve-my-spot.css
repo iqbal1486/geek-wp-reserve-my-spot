@@ -306,6 +306,10 @@ button {
     justify-content: start;
 }
 
+.reserve_my_spot_lightbox_form .form .progress-bar li::before{
+    content: "" !important;
+}
+
 .reserve_my_spot_lightbox_form .form .progress-bar li.progress-bar__dot {
     display: block;
     width: 0;
@@ -501,7 +505,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 304px;
+    max-width: 344px;
     padding: 20px 20px 36px 20px;
     border-radius: 8px;
     background: #FFF;

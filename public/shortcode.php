@@ -10,7 +10,7 @@ function wprms_shortcode_form_masterclass($atts) {
       ?>
       <div class="reserve_my_spot_container reserve_my_spot_wrapper">
             <button class="watch_master_class_now">Reserve My Spot</button>
-            <div class="form-container">
+            <div class="form-container reserve_my_spot_form">
                   <div class="form-container-top">
                         <div>&#9655; Playing for a limited time only</div>
                   </div>

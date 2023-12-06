@@ -3,7 +3,7 @@
 	function wprms_theme_enqueue_styles() {
 	    //wp_register_style( 'wprms-bootstrap', WPRMS_PLUGIN_URL."/assets/css/bootstrap.css" );
 	    wp_register_style( 'wprms-intlTelInput', WPRMS_PLUGIN_URL."/assets/css/intlTelInput.css" );
-	    wp_register_style( 'wprms-style', WPRMS_PLUGIN_URL."/assets/css/reserve-my-spot.css?v=3" );
+	    wp_register_style( 'wprms-style', WPRMS_PLUGIN_URL."/assets/css/reserve-my-spot.css?", array(), time() );
 
 	    wp_register_script( 'wprms-intlTelInput-js', WPRMS_PLUGIN_URL."/assets/js/intlTelInput-jquery.min.js", array('jquery') );
 	    wp_register_script( 'wprms-intl-tel-input-utils-js', WPRMS_PLUGIN_URL."/assets/js/intl-tel-input_11.0.4_js_utils.js", array('jquery') );
