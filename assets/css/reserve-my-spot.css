@@ -190,11 +190,11 @@ button {
     display: none;
 }
 
-.form-container .custom-hidden {
+.reserve_my_spot_form .custom-hidden {
     display: none;
 }
 
-.form-container #loader {
+.reserve_my_spot_form #loader {
     display: none;
 }
 
@@ -202,7 +202,7 @@ button {
     background: #1a8ba1;
 }
 
-.form-container .custom-loader {
+.reserve_my_spot_form .custom-loader {
     --d: 11px;
     width: 2px;
     height: 2px;
@@ -214,6 +214,10 @@ button {
     right: 25px;
     box-shadow: calc(1*var(--d)) calc(0*var(--d)) 0 0, calc(0.707*var(--d)) calc(0.707*var(--d)) 0 0.5px, calc(0*var(--d)) calc(1*var(--d)) 0 1px, calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 1.5px, calc(-1*var(--d)) calc(0*var(--d)) 0 2px, calc(-0.707*var(--d)) calc(-0.707*var(--d))0 2.5px, calc(0*var(--d)) calc(-1*var(--d)) 0 3px;
     animation: s7 0.5s infinite steps(8);
+}
+
+.reserve_my_spot_form .custom-loader.lightbox{
+    top: 24px;
 }
 
 @keyframes s7 {

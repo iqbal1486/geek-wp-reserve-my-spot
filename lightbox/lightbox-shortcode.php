@@ -91,7 +91,7 @@ function wprms_shortcode_lightbox_form_masterclass($atts) {
                                   <div class="form-inner">
                                       <div class="form-group">
                                           <div class="form-input-container">
-                                              <input type="tel" name="phone" id="phone" autocomplete="off" placeholder="" required>
+                                              <input type="tel" name="phone" id="phone" autocomplete="off" placeholder="Phone Number">
                                           </div>
                                       </div>
                                   </div>
@@ -122,7 +122,7 @@ function wprms_shortcode_lightbox_form_masterclass($atts) {
                               </div>
                               <div class="button-group submit_button_wrapper">
                                   <button type="submit" id="validate" class="hidden button" name="reserve_my_spot">Reserve My Spot Now</button>
-                                  <div id="loader" class="custom-loader custom-hidden"></div>
+                                  <div id="loader" class="custom-loader custom-hidden lightbox"></div>
                                   <p class="disclaimer hidden" id="lightbox_disclaimer">
                                       By registering for the above, you confirm that you agree to the <a
                                           href="/terms-and-conditions/">Terms of Use</a> &
