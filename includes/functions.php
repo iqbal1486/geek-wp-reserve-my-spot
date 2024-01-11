@@ -158,6 +158,9 @@
 
 				$body = "Your Masterclass “Invisible to Interesting” starts in 15 minutes. Click here to go to the webinar: ".$redirect_url;
 				wprms_init_twilio($posted_data['full_phone'], $body, $dateTimeUTC);
+
+				$body = "Friendly reminder that your SocialSelf registration for Invisible to Interesting ends shortly. Check email from “SocialSelf” ";
+				wprms_init_twilio($posted_data['full_phone'], $body, $webinar_date_utc, 5);
 			}
 
 			/*
@@ -221,7 +224,7 @@
 		return $difference; 
 	}
 
-	function wprms_init_twilio($to = NULL, $body = NULL, $date = NULL){
+	function wprms_init_twilio($to = NULL, $body = NULL, $date = NULL, $days = NULL){
 		global $wprms_options;
 		/*
 			Client Account from Theme options
@@ -230,9 +233,19 @@
 		$token 		 		= $TWILIO_AUTH_TOKEN = $wprms_options['twilio_auth_token'];
 		$from_phone  		= $wprms_options['twilio_from_phone'];
 		$message_service_id = $wprms_options['twilio_message_ssid'];
+
 		$date 			= date('y-m-d H:i:s', strtotime($date ."-15 minutes" ));
 		$iso8601Date 	= date("c", strtotime($date));
 		$iso8601Date 	= $iso8601Date.'Z';
+
+		if($days > 0){
+			$webinar_time_temp = new DateTime($date);
+			$webinar_time_temp->modify('+5 days');
+			$webinar_time_temp->setTime(12, 0, 0);
+			$date = $webinar_time_temp->format('Y-m-d H:i:s');	
+			$iso8601Date 	= date("c", strtotime($date));
+			$iso8601Date 	= $iso8601Date.'Z';
+		}
 
 		// Your Account SID and Auth Token from console.twilio.com
 		$client = new Twilio\Rest\Client($sid, $token);
@@ -266,12 +279,8 @@
 		 	wprms_generate_log("Twilio Error Details :".$e);
 		}
 
-		// echo "<pre>";
-		// echo $iso8601Date;
-		// print_r($response);
-		// echo "</pre>";
-		// exit();
 		wprms_generate_log("Message ID :".$response->sid);
+
 		return true;
 	}
 	
@@ -306,6 +315,17 @@
 		global $wprms_options;
 	    $api_key = $wprms_options['api_key'];
 	    $form_id = $wprms_options['form_id'];
+	    
+	    if(isset($_GET['test'])){
+	    	$body = "Friendly reminder that your SocialSelf registration for Invisible to Interesting ends shortly. Check email from “SocialSelf” ";
+	    	echo $body;
+	    	$date = '2023-11-28 05:00';
+	    	$webinar_time = new DateTime($date);
+			$webinar_time->modify('+5 days');
+			$webinar_time->setTime(12, 0, 0);
+			$deliveryDateFormatted = $webinar_time->format('Y-m-d H:i:s');
+			echo $deliveryDateFormatted;
+	    }
 
 	    // if(isset($_GET['test'])){
 		//     $userTimeZone = getTimeZoneFromIpAddress();
