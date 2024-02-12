@@ -241,7 +241,7 @@
 		if($days > 0){
 			$webinar_time_temp = new DateTime($date);
 			$webinar_time_temp->modify('+5 days');
-			$webinar_time_temp->setTime(12, 0, 0);
+			$webinar_time_temp->setTime(17, 0, 0);
 			$date = $webinar_time_temp->format('Y-m-d H:i:s');	
 			$iso8601Date 	= date("c", strtotime($date));
 			$iso8601Date 	= $iso8601Date.'Z';
