@@ -58,7 +58,7 @@ $(document).ready(function() {
       $('.reserve_my_spot_form select[name="date"]').append(
             `<option value="${nextTomorrow.dateString}">${nextTomorrow.formatted}</option>`);
 
-      $('.reserve_my_spot_form select[name="date"]').on('change', function(e) {
+      $(document).on('change', '.reserve_my_spot_form select[name="date"]', function(e) {
             $('.reserve_my_spot_form select[name="time"]').html(
                   '<option value="" disabled selected>Select time</option>');
             if (e.target.value == '0') {
